@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Real-Time Alarm</title>
+  </head>
+  <body>
+    <div class="alarm-cont">
+      <h3>Real-Time Alarm</h3>
+      <section class="alarm-area">
+        <audio
+          id="ringtone"
+          src="http://drive.google.com/uc?export=view&id=1u0bn_zPhhk51CK_Xo5mE6Rgrhe9kKZul"
+        ></audio>
+        <div class="alarmOn">
+          <span id="back"></span>
+          <h3>Scheduled Time: <span id="Alarm-time">Loading...</span></h3>
+          <h3>minutes-left: <span id="timeLeft">loading...</span></h3>
+          <div class="ring"></div>
+          <button class="offBtn">Switch Off</button>
+        </div>
+        <div class="alarmOff">
+          <h5>Note:All time's in 24Hrs-clock system.</h5>
+          <h2 class="disp-area">Display message container</h2>
+          <form class="alarm" name="myForm">
+            <div class="mini">
+              <input type="number" placeholder="Hr" id="val1" />
+              <span class="span1">:</span>
+              <input type="number" placeholder="Min" id="val2" />
+              <span class="span2">Hrs</span>
+            </div>
+
+            <button type="submit" id="submitBtn">Set Alarm</button>
+          </form>
+        </div>
+      </section>
+      <footer class="foot">
+        <h4>Disclaimer</h4>
+        <p>
+          The ringtone is set to Kenyatta hill's "wings of a dove" song as a
+          tribute to the late legendary reggae singer Culture and my love for reggae music.
+        </p>
+      </footer>
+    </div>
+    <script src="alarm.js"></script>
+  </body>
+</html>
